@@ -1,0 +1,19 @@
+{
+  "name": "discord-handler",
+  "version": "1.0.0",
+  "description": "a best handler for discord bot",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Luketruke",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.12.1",
+    "node": "^20.5.0",
+    "pg": "^8.11.2",
+    "pg-promise": "^11.5.3",
+    "topgg-autoposter": "^2.0.1"
+  }
+}
