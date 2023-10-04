@@ -1,9 +1,13 @@
 import { Colors } from "discord.js";
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+console.log('DISCORD_BOT_TOKEN:', process.env.DISCORD_BOT_TOKEN);
 
 const settings = {
-  TOKEN: process.env.TOKEN || "9i2134978234789327849", //Your discord bot token
-  PREFIX: "/",
-  Owners: ["1234435453345"], //Your Discord User ID
+  TOKEN: process.env.DISCORD_BOT_TOKEN,
+  PREFIX: process.env.PREFIX,
   Slash: {
     Global: true,
   },

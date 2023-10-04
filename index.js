@@ -1,13 +1,16 @@
 import { Bot } from "./handlers/Client.js";
 import { AutoPoster } from "topgg-autoposter";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const client = new Bot();
 
 client.build(client.config.TOKEN);
 
-//Your Top.GG Token, this function send the information about bot once every 30 minutes.
+// AutoPoster once every 30 minutes to TOPGG
 const ap = AutoPoster(
-  "29034fdwfdji23040", //Change this
+  process.env.TOPGG_TOKEN, 
   client
 );
 
