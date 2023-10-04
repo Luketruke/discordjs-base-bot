@@ -3,8 +3,6 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-console.log('DISCORD_BOT_TOKEN:', process.env.DISCORD_BOT_TOKEN);
-
 const settings = {
   TOKEN: process.env.DISCORD_BOT_TOKEN,
   PREFIX: process.env.PREFIX,
